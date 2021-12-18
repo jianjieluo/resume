@@ -4,86 +4,82 @@
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{罗剑杰}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{luojj26@mail2.sysu.edu.cn} \textperiodcentered\ 
+  \phone{(+86) 137-1932-6800} \textperiodcentered\ 
+  \github[jianjieluo]{https://github.com/jianjieluo}}
  
 \section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\datedsubsection{\textbf{中山大学}, 广州, 广东}{2019 -- 至今}
+\textit{在读博士研究生}\ 计算机科学与技术, 预计 2024 年 6 月毕业
+\datedsubsection{\textbf{中山大学}, 广州, 广东}{2015 -- 2019}
+\textit{学士}\ 软件工程
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
+\section{\faEye\ 研究兴趣}
 \begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+\item 视觉-语言多模态技术
+\item 大规模预训练技术
 \end{itemize}
-
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
-\end{itemize}
-\end{onehalfspacing}
-
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
-\end{itemize}
-\end{onehalfspacing}
 
 % Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
+\section{\faFileText\  论文发表}
+
+\begin{itemize}
+
+ \item \textbf{CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising.} \textbf{Jianjie Luo}, Yehao Li, Yingwei Pan, Ting Yao, Hongyang Chao, Tao Mei. \textit{In ACM Multimedia, 2021}.
+ 
+ \item \textbf{Auto-captions on GIF: A Large-scale Video-sentence Dataset for Vision-language Pre-training.} Yingwei Pan, Yehao Li, \textbf{Jianjie Luo}, Jun Xu, Ting Yao, Tao Mei. \textit{In Arxiv, 2020}.
+ 
+\end{itemize}
+
+
+\section{\faUsers\ 实习/项目经历}
+\datedsubsection{\textbf{京东AI研究院}, 北京}{2018年7月 -- 至今}
+\role{研究型实习生}
+
+\begin{itemize}
+  \item 在CCF-A国际学术会议 ACM MM2021 上发表论文: CoCo-BERT: Improving Video-Language Pre-training with Contrastive Cross-modal Matching and Denoising. 本人为第一作者。
+  \begin{itemize}
+    \item 现有视频-文本预训练技术中预训练和微调过程存在输入数据格式不一致的问题，本文在预训练阶段引入不带掩码噪声的输入数据，通过对比学习的方式去减缓上述问题，从而提升预训练模型的性能。
+  \end{itemize}
+  \item 参与大规模视频-文本跨模态预训练数据集ACTION数据集的构建工作。
+  \begin{itemize}
+    \item 该数据集包含224,989个视频-文本对。
+    \item 该数据集被连续两届 ACM MM2020 和 2021 举办的跨模态预训练比赛所使用。
+  \end{itemize}
+  \item 参与跨模态分析的多功能和高性能的代码库X-modaler的开发工作。
+  \begin{itemize}
+    \item 该代码库是业界首个模块化、标准化的跨模态视觉分析代码库。
+    \item 该代码库获得了ACM MM2021会议上的最佳开源奖项。
+  \end{itemize}
+\end{itemize}
+
+\section{\faHeartO\ 获奖情况}
+\datedline{\textit{优秀毕业生}, 中山大学}{2019 年 06 月}
+\datedline{\textit{国家奖学金}, 中山大学}{2018 年 10 月}
+\datedline{\textit{Finalist}, 美国大学生数学建模大赛}{2018 年 04 月}
 
 \section{\faCogs\ IT 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item 编程语言: Python, C/C++, MATLAB, LATEX, Markdown, HTML/CSS/JS
+  \item 深度学习工具: Caffe, Pytorch
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%   \item 语言: 英语 - 熟练(六级: 554)
+% \end{itemize}
 
 %% Reference
 %\newpage
